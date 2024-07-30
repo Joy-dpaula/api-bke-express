@@ -1,0 +1,25 @@
+{
+  "name": "api-bke-express",
+  "version": "1.0.0",
+  "description": "API Node com Express para Backend do 2 semestre de 2024",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joy-dpaula/api-bke-express.git"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "zod",
+    "mvc"
+  ],
+  "author": "Joyce de Paula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joy-dpaula/api-bke-express/issues"
+  },
+  "homepage": "https://github.com/Joy-dpaula/api-bke-express#readme"
+}
