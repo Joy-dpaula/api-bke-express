@@ -1,0 +1,71 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Account",
+    "collectionId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+    "dateExported": "2024-08-13T19:34:12.678Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "739f0410-199f-45ee-b345-1f1edcb31b44",
+            "colId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+            "containerId": "",
+            "name": "/account",
+            "url": "{{BASE_URL}}/account",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-13T18:36:55.308Z",
+            "modified": "2024-08-13T18:37:16.442Z",
+            "headers": []
+        },
+        {
+            "_id": "4398c77a-9bb8-4e29-a689-5edf070a1e3d",
+            "colId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+            "containerId": "",
+            "name": "/list",
+            "url": "{{BASE_URL}}/account/list",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-13T18:37:26.427Z",
+            "modified": "2024-08-13T18:38:08.497Z",
+            "headers": []
+        },
+        {
+            "_id": "c23b98e8-0384-4fe8-91c0-4e5a0f247a04",
+            "colId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+            "containerId": "",
+            "name": "/account/id",
+            "url": "{{BASE_URL}}/account/3",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-08-13T18:38:49.867Z",
+            "modified": "2024-08-13T18:39:45.682Z",
+            "headers": []
+        },
+        {
+            "_id": "88aeb03b-a984-4bb8-a7be-b3b316ecd067",
+            "colId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+            "containerId": "",
+            "name": "/account/id",
+            "url": "{{BASE_URL}}/account/3",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-08-13T18:39:59.979Z",
+            "modified": "2024-08-13T18:40:11.272Z",
+            "headers": []
+        },
+        {
+            "_id": "b29676c3-739b-4618-82f5-00aa79ff20aa",
+            "colId": "9b779ed5-b540-453a-8ef1-af4ad11fd782",
+            "containerId": "",
+            "name": "/account/id",
+            "url": "{{BASE_URL}}/account/5",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-08-13T18:40:40.587Z",
+            "modified": "2024-08-13T18:40:50.321Z",
+            "headers": []
+        }
+    ],
+    "ref": "ZLyxzjG8iMw9M5sf477PRDPXPSSJY6tK2EevVZBwA_iyobiPBALs_pJQd6ktD4jlJwvUh9vIbDjyFxT9ZcKx_Q"
+}
