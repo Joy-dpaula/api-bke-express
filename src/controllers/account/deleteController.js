@@ -6,8 +6,6 @@ const deleteController = async (req, res) => {
 
     const account = await deleteAccount(+id)
 
-    
-
     if (!account)
         return res.status(404).json({
             error: `Conta com o id ${id} não encontrado!`

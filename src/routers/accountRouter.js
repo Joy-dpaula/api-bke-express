@@ -1,5 +1,5 @@
 import express from 'express'
-import createController from '../controllers/account/getController.js';
+import createController from '../controllers/account/createController.js';
 import listController from '../controllers/account/listController.js';
 import listIdController from '../controllers/account/byIdController.js';
 import updateController from '../controllers/account/updateController.js';

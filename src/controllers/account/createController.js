@@ -1,9 +1,8 @@
-import { signup } from "../../models/authModel.js"
+import { createAccount } from "../../models/accountModel.js"
 
-const createUser = async (req, res) => {
-
-    const user = req.body;
-    const result = await signup(user)
+const createA = async (req, res) => {
+    const account = req.body
+    const result = await createAccount(account)
 
     if(!result)
         return res.status(401).json({
@@ -16,4 +15,4 @@ const createUser = async (req, res) => {
     })
 }
 
-export default createUser;
+export default createA
