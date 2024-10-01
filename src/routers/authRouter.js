@@ -14,4 +14,4 @@ router.post('/logout', logout);
 
 router.get('/list', listController);
 
-export default router
+export default router;

@@ -13,9 +13,9 @@ app.use(logger)
 app.use(cors())
 app.use(express.json())
 
-app.get('/', welcome)
-app.use('/auth', authRouter)
-app.use('/account', accountRouter)
+app.get('/', welcome);
+app.use('/auth', authRouter);
+app.use('/account', accountRouter);
 
 app.use(errorHandler)
 
