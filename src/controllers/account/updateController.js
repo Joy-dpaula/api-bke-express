@@ -1,12 +1,22 @@
-import { updateAccount } from "../../models/accountModel.js"
+import { updateAccount, accountValidateToUpdate } from "../../models/accountModel.js"
 
 const updateController = async (req, res, next) => {
-    const { id } = req.params
+
     try {
+        const { id } = req.params
+
         const account = req.body
+
         account.id = +id
 
-        const result = await update(account)
+        const accountValidate = accountValidateToUpdate(account);
+
+        if (accountValidate?.error) return res.status(401).json({
+            error: "Erro ao atualizar um serviço!",
+            fieldErrors: accountValidate.error.flatten().fieldErrors
+        })
+
+        const result = await updateAccount(accountValidate.data)
 
         if (!result)
             return res.status(401).json({
