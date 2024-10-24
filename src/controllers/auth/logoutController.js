@@ -10,13 +10,18 @@ const logout = async (req, res, next) => {
                 error: 'Erro no logout, access token não informado'
             })
 
-        const result = await deleteByToken(accessToken)
+        await deleteByToken(accessToken)
 
         return res.json({
-            success: "Logout efetuado com sucesso!",
-            user: result
+            success: "Logout efetuado com sucesso!"
+
+
         })
     } catch (error) {
+        if (error?.code === 'P2025')
+            return res.json({
+                success: 'Logout efetuado com sucesso!'
+            })
         next(error)
     }
 }
